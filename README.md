@@ -29,23 +29,23 @@ Desplegar la infraestructura y la funcion lambda :
 Acceder mediante navegador o Postman a las APIs generadas
 
 Ejemplo:
-GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/films
-GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/films/{number}
-GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/health
-GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/people
-GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/people/{number}
-GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/posts
-GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/species
-GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/species/{number}
-GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/starships
-GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/starships/{number}
-GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/sw
-GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/vehicles
-GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/vehicles/{number}
-GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/planets
-GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/planets/{number}
+- `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/films`
+- `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/films/{number}`
+- `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/health`
+- `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/people`
+- `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/people/{number}`
+- `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/posts`
+- `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/species`
+- `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/species/{number}`
+- `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/starships`
+- `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/starships/{number}`
+- `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/sw`
+- `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/vehicles`
+- `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/vehicles/{number}`
+- `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/planets`
+- `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/planets/{number}`
 
-DELETE - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/post
-GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/post
-PATCH - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/post
-POST - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/post
+- `DELETE - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/post`
+- `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/post`
+- `PATCH - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/post`
+- `POST - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/post`
