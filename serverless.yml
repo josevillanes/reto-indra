@@ -1,0 +1,125 @@
+# Welcome to Serverless!
+#
+# This file is the main config file for your service.
+# It's very minimal at this point and uses default values.
+# You can always add more config options for more control.
+# We've included some commented out config examples here.
+# Just uncomment any of them to get that config option.
+#
+# For full config options, check the docs:
+#    docs.serverless.com
+#
+# Happy Coding!
+
+service: tata-reto
+# app and org for use with dashboard.serverless.com
+#app: your-app-name
+#org: your-org-name
+
+custom:
+  settings:
+    POSTS_TABLE: wsposts
+
+# You can pin your service to only deploy with a specific Serverless version
+# Check out our docs for more details
+frameworkVersion: "2"
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+
+  # you can overwrite defaults here
+  stage: dev
+  region: us-east-2
+  role: arn:aws:iam::427485148455:role/ServerlessRoleAdmin
+  environment: ${self:custom.settings}
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - dynamodb:DescribeTable
+        - dynamodb:Scan
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteItem
+      Resource:
+        - "arn:aws:dynamodb:${self:provider.region}:*:table/${self:custom.settings.POSTS_TABLE}"
+
+functions:
+  serverless-api-sw:
+    handler: handler.handler
+    events:
+      - http:
+          path: /films
+          method: get
+      - http:
+          path: /films/{number}
+          method: get
+      - http:
+          path: /health
+          method: get
+      - http:
+          path: /people
+          method: get
+      - http:
+          path: /people/{number}
+          method: get
+      - http:
+          path: /post
+          method: delete
+      - http:
+          path: /post
+          method: get
+      - http:
+          path: /post
+          method: patch
+      - http:
+          path: /post
+          method: post
+      - http:
+          path: /posts
+          method: get
+      - http:
+          path: /species
+          method: get
+      - http:
+          path: /species/{number}
+          method: get
+      - http:
+          path: /starships
+          method: get
+      - http:
+          path: /starships/{number}
+          method: get
+      - http:
+          path: /sw
+          method: get
+      - http:
+          path: /vehicles
+          method: get
+      - http:
+          path: /vehicles/{number}
+          method: get
+      - http:
+          path: /planets
+          method: get
+      - http:
+          path: /planets/{number}
+          method: get
+
+resources:
+  Resources:
+    PostsTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        AttributeDefinitions:
+          - AttributeName: "postId"
+            AttributeType: "S"
+        KeySchema:
+          - AttributeName: "postId"
+            KeyType: "HASH"
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        TableName: ${self:custom.settings.POSTS_TABLE}
