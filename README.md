@@ -43,8 +43,20 @@ Ejemplo:
 - `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/vehicles/{number}`
 - `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/planets`
 - `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/planets/{number}`
-
-- `DELETE - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/post`
-- `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/post`
-- `PATCH - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/post`
 - `POST - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/post`
+`{
+ `   "postId": "1000",
+ `   "nickname": "Marcelo",
+ `   "body": "Star War es lo máximo"
+ `}
+- `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/post?postId=1000` 
+- `DELETE - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/post`
+`{
+`    "postId": "1002"
+`}
+- `PATCH - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/post`
+`{
+`    "postId": "1001",
+`    "updateKey": "nickname",
+`    "updateValue": "Felipillo"
+`}
