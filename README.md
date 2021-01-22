@@ -44,7 +44,7 @@ Ejemplo:
 - `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/planets`
 - `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/planets/{number}`
 - `POST - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/post`
-`{
+-`{
  `   "postId": "1000",
  `   "nickname": "Marcelo",
  `   "body": "Star War es lo máximo"
