@@ -1,6 +1,6 @@
 # Reto Tata Backend / SWAPI API REFACTOR
 
-Este proyecto fué creado con el framework Serverless para aws, implementa la refactorización de todos del api SWAPI (https://swapi.py4e.com/) en el cual se cambian los modelos de todo el dominio y se implementa un modelo de Post o Comentario sobre el cual se ejecutan las funcioalidades CRUD (Crar, Leer, Actualziar y Eliminar).
+Este proyecto fué creado con el framework Serverless para aws, implementa la refactorización de todos del api SWAPI (https://swapi.py4e.com/) en el cual se cambian los modelos de todo el dominio y se implementa un modelo de Post o Comentario sobre el cual se ejecutan las funcioalidades CRUD (Crear, Leer, Actualizar y Eliminar).
 
 ## Como iniciar
 
@@ -29,6 +29,7 @@ Desplegar la infraestructura y la funcion lambda :
 Acceder mediante navegador o Postman a las APIs generadas
 
 Ejemplo:
+
 - `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/films`
 - `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/films/{number}`
 - `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/people`
@@ -44,10 +45,10 @@ Ejemplo:
 - `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/planets`
 - `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/planets/{number}`
 - `POST - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/post`
-- `{"postId": "1050","nickname": "Marcelo","body": "Star War es lo máximo"}
+- `{"postId": "1050","nickname": "Marcelo","body": "Star War es lo máximo"}`
 - `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/post?postId=1050` 
 - `PATCH - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/post`
-- `{"postId": "1050", "updateKey": "nickname", "updateValue": "Felipillo"}
+- `{"postId": "1050", "updateKey": "nickname", "updateValue": "Felipillo"}`
 - `DELETE - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/post`
-- `{"postId": "1050"}
+- `{"postId": "1050"}`
 
