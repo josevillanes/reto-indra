@@ -31,7 +31,6 @@ Acceder mediante navegador o Postman a las APIs generadas
 Ejemplo:
 - `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/films`
 - `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/films/{number}`
-- `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/health`
 - `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/people`
 - `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/people/{number}`
 - `GET - https://qbglbhp0z2.execute-api.us-east-2.amazonaws.com/dev/posts`
