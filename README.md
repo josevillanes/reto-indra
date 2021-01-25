@@ -6,7 +6,7 @@ Este proyecto fué creado con el framework Serverless para aws, implementa la re
 
 Clonar el repositorio :
 
-`git clone https://github.com/finmavis/swapi-task.git`
+`git clone https://github.com/josevillanes/tata-challenge`
 
 Verificar si se tienen instalado nodejs serverless sino intalar con el siguiente comando :
 
