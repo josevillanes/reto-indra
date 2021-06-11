@@ -2,6 +2,10 @@
 
 Este proyecto fué creado con el framework Serverless para aws, implementa la refactorización de todos los endpoints del api de prueba SWAPI (https://swapi.py4e.com/) en el cual se cambian los modelos de todo el dominio del ingles al español y se implementa un nuevo modelo: Post o Comentario sobre el cual se ejecutan las funcioalidades CRUD (Crear, Leer, Actualizar y Eliminar) sobre la base de datos Dynamo.
 
+La arquitectura empleada fue la siguiente:
+
+![N|Solid](https://drive.google.com/uc?id=1icmMK7tuBrUaQgF62xIpzj7nOU_gMYdC)
+
 ## Como iniciar
 
 Clonar el repositorio :
